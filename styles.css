@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "girlroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top{
+    pointer-events: none;   /* basically yeh top-events hota hai jo hum click krte hai kisi bhi text pe to click hota hai pr humne none lg diya hai*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000000d8; */
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* border: 1px solid red; */
+
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+#nav img{
+    height: 60px;
+}
+#nleft{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+#heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+
+#heroleft .elem{
+    position: relative;  /*yeh bhi text ke liye*/
+    height: 9vw;
+    overflow: hidden;      
+    /* background-color: red; */
+
+
+}
+
+/* ab humko chiye ek h1 upar aa jye to hum phla h1 select karege */
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;  /* yeh hum text ko krne ke liye jb hum event listener lg rhe h ek ke upar ek ho jye*/
+    top: 100%; /*yeh bhi styling text ke liye*/
+    left: 0; /*yeh bhi same*/
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    /* height: 100px; */
+    /* background-color: blue; */
+    color: #fff;
+
+}
+
+#heroright p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+
+}
