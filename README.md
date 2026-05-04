@@ -1,14 +1,19 @@
-# Landing Page
+# Rayban Landing Page Clone
 
-A responsive landing page built using HTML, CSS, and JavaScript.
-
-## Features
-- Responsive Design
-- Modern UI
-- Mobile Friendly
-- Clean Layout
-
-## Technologies Used
+## Tech Used
 - HTML
 - CSS
 - JavaScript
+- GSAP
+- SheryJS
+
+## Features
+- Animated text slider
+- Image transition effect
+- Custom UI design
+- Responsive layout (basic)
+
+## Learning
+- DOM manipulation
+- GSAP animations
+- UI structuring
