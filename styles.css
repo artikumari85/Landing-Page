@@ -177,10 +177,8 @@ html,body{
   #hero {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 20px;
-    width: 100%;
   }
 
   #heroleft {
@@ -194,18 +192,18 @@ html,body{
   #nav {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 15px;
+    gap: 10px;
   }
 
   #nleft, #nright {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   #heroleft .elem {
     height: 20vw;
+    overflow: hidden;
   }
 
   #heroleft .elem h1 {
