@@ -44,14 +44,14 @@ var index = 0;
 // yeh basically hum mouse ke click krne pe agr koi kare ga to ek ek ek upar jldi jldi aa jye ga aisa na ho to yeh kare ge
 var animating = false;
 
-document.querySelector("#main")
+document.querySelector("button")
     .addEventListener("click",function(){
         // jn ap click karo ge animating ki value false hai not lg hai to yeh true ho jye ga to if chle ga to animating ki value hogi true
         
      if(!animating){
         animating = true ;
            gsap.to(h1s[index],{
-            top : "-=100%",
+            top : "-100%",
             ease : Expo.easeInOut,
             duration: 1,
             onComplete : function(){
@@ -63,7 +63,8 @@ document.querySelector("#main")
 
         });
 
-        index === h1s.length-1 ? (index = 0): index++;
+        // index === h1s.length-1 ? (index = 0): index++;
+        index = (index + 1) % h1s.length;
          gsap.to(h1s[index],{
             top : "-=100%",
             ease : Expo.easeInOut,
