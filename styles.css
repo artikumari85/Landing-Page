@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "girlroy";
+    font-family: "gilroy";
 }
 
 html,body{
@@ -95,6 +95,13 @@ html,body{
     /* background-color: yellow; */
 }
 
+#heroleft button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
 #heroleft .elem{
     position: relative;  /*yeh bhi text ke liye*/
     height: 9vw;
@@ -126,6 +133,8 @@ html,body{
     font-size: 3vw;
     margin-top: 2vw;
     font-family: "kajiro";
+    cursor: pointer;
+     transition: all 0.3s ease;
 
 }
 #heroright{
@@ -160,3 +169,4 @@ html,body{
     margin-bottom: 100px;
 
 }
+
