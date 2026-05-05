@@ -13,7 +13,6 @@ html,body{
 #main{
     width: 100%;
     height: 100vh;
-    /* background-color: black; */
 }
 
 #back{
@@ -29,13 +28,12 @@ html,body{
 }
 
 #top{
-    pointer-events: none;   /* basically yeh top-events hota hai jo hum click krte hai kisi bhi text pe to click hota hai pr humne none lg diya hai*/
+    pointer-events: none;   
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    /* background-color: #000000d8; */
 }
 
 #workingarea{
@@ -44,8 +42,7 @@ html,body{
     width: 80%;
     height: 100vh;
     max-width: 1920px;
-    /* border: 1px solid red; */
-
+   
 }
 
 #nav{
@@ -86,13 +83,10 @@ html,body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* height: 100px; */
-    /* background-color: red; */
 }
 #heroleft{
     min-width: 50%;
-    /* height: 100px; */
-    /* background-color: yellow; */
+    
 }
 
 #heroleft button:hover{
@@ -103,23 +97,19 @@ html,body{
 }
 
 #heroleft .elem{
-    position: relative;  /*yeh bhi text ke liye*/
+    position: relative;  
     height: 9vw;
-    overflow: hidden;      
-    /* background-color: red; */
-
+    overflow: hidden;     
 
 }
-
-/* ab humko chiye ek h1 upar aa jye to hum phla h1 select karege */
 #heroleft .elem h1:nth-child(1){
     top: 0;
 }
 
 #heroleft .elem h1{
-    position: absolute;  /* yeh hum text ko krne ke liye jb hum event listener lg rhe h ek ke upar ek ho jye*/
-    top: 100%; /*yeh bhi styling text ke liye*/
-    left: 0; /*yeh bhi same*/
+    position: absolute;  
+    top: 100%; 
+    left: 0;
     line-height: .9;
     font-family: "kajiro";
     color: #fff;
@@ -142,8 +132,6 @@ html,body{
     flex-direction: column;
     align-items: flex-end;
     width: 17%;
-    /* height: 100px; */
-    /* background-color: blue; */
     color: #fff;
 
 }
@@ -169,9 +157,6 @@ html,body{
     margin-bottom: 100px;
 
 }
-
-
-/* Responisve */
 @media (max-width: 768px) {
 
   #hero {
